@@ -17,7 +17,7 @@ This will compile the SASS with :
 - Clean CSS : Removed comments and minify the stylesheet
 
 # Images
-Put your images in `src/images`. To compress them execute `$ npm run compress-images`
+Put your images in `src/images`. To compress them execute `$ npm run compress-images`.
 
 # Contribute
 Just make pull request to improve this repository 😏.
