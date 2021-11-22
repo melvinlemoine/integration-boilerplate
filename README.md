@@ -9,6 +9,7 @@ Repository created for students who want to set up projects quickly.
 - `$ npm run watch` : compile the SASS on save.
 - `$ npm run deploy` : compile the SASS to CSS properly *(more about this below)*.
 - `$ npm run build-images` : compress all images in `src/images` and put the render in `/dist/images`.
+- `$ npm run assets` : copy all assets in `src/` to `/dist/` (css & fonts).
 
 # CSS render
 To compile the SASS to CSS properly *(the ``$ npm run watch`` command only compile but do not autoprefix and clean)*, execute ``$ npm run deploy``.

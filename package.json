@@ -8,7 +8,8 @@
     "build-clean": "rimraf css",
     "compress-images": "rimraf dist/images/* && sharp resize 1920 -q 75 -f webp -i src/images/* -o dist/images",
     "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass dist/css/styles.css",
-    "watch": "npm run build-sass -- --watch"
+    "watch": "npm run build-sass -- --watch",
+    "assets": "copyfiles -f src/css/*.css dist/css"
   },
   "author": "https://github.com/melvinlemoine",
   "devDependencies": {
@@ -22,6 +23,7 @@
   },
   "description": "",
   "dependencies": {
+    "copyfiles": "^2.4.1",
     "sharp-cli": "^1.15.0"
   }
 }
