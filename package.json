@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "scripts": {
     "deploy": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --autoprefixer.browsers '> 5%' --output assets/css/styles.css assets/css/styles.css",
+    "build-autoprefix": "postcss --use autoprefixer --output assets/css/styles.css assets/css/styles.css",
     "build-cleancss": "cleancss -o assets/css/styles.css assets/css/styles.css",
     "build-clean": "rimraf css",
     "build-sass": "sass sass/styles.sass assets/css/styles.css",
