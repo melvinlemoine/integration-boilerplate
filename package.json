@@ -1,20 +1,24 @@
 {
   "name": "integration-boilerplate",
-  "version": "1.0.1",
+  "description": "",
+  "version": "1.5",
   "scripts": {
     "deploy": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --output assets/css/styles.css assets/css/styles.css",
-    "build-cleancss": "cleancss -o assets/css/styles.css assets/css/styles.css",
-    "build-sass": "sass sass/styles.sass assets/css/styles.css",
+    "build-autoprefix": "postcss --use autoprefixer --output assets/css/style.css assets/css/style.css",
+    "build-cleancss": "cleancss -o assets/css/style.css assets/css/style.css",
+    "build-sass": "sass sass/styles.sass assets/css/style.css",
     "watch": "npm run build-sass -- --watch"
   },
   "author": "https://github.com/melvinlemoine",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "clean-css-cli": "^5.5.0",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.56.1",
-    "postcss": "^8.4.19"
+    "autoprefixer": "^10.4.19",
+    "clean-css-cli": "5.6.3",
+    "postcss-cli": "11.0.0",
+    "sass": "1.75.0"
   },
-  "description": ""
+  "browserslist": [
+    "last 4 version",
+    "> 0.5%",
+    "not dead"
+  ]
 }
