@@ -8,6 +8,7 @@
     "build-cleancss": "cleancss -o assets/css/style.css assets/css/style.css",
     "build-sass": "sass sass/styles.sass assets/css/style.css",
     "watch": "npm run build-sass -- --watch",
+    "sass-migrate": "sass-migrator module --migrate-deps sass/styles.sass"
 
   },
   "author": "https://github.com/melvinlemoine",
