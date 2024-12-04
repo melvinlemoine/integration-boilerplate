@@ -7,14 +7,15 @@
     "build-autoprefix": "postcss --use autoprefixer --output assets/css/style.css assets/css/style.css",
     "build-cleancss": "cleancss -o assets/css/style.css assets/css/style.css",
     "build-sass": "sass sass/styles.sass assets/css/style.css",
-    "watch": "npm run build-sass -- --watch"
+    "watch": "npm run build-sass -- --watch",
+
   },
   "author": "https://github.com/melvinlemoine",
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "clean-css-cli": "5.6.3",
-    "postcss-cli": "11.0.0",
-    "sass": "1.75.0"
+    "autoprefixer": "^10.4.20",
+    "clean-css-cli": "^5.6.3",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.82.0"
   },
   "browserslist": [
     "last 4 version",
