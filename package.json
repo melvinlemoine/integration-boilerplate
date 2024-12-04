@@ -1,15 +1,13 @@
 {
   "name": "integration-boilerplate",
   "description": "",
-  "version": "1.5",
+  "version": "1.6",
   "scripts": {
     "deploy": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
     "build-autoprefix": "postcss --use autoprefixer --output assets/css/style.css assets/css/style.css",
     "build-cleancss": "cleancss -o assets/css/style.css assets/css/style.css",
     "build-sass": "sass sass/styles.sass assets/css/style.css",
-    "watch": "npm run build-sass -- --watch",
-    "sass-migrate": "sass-migrator module --migrate-deps sass/styles.sass"
-
+    "watch": "npm run build-sass -- --watch"
   },
   "author": "https://github.com/melvinlemoine",
   "devDependencies": {
