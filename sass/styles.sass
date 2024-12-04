@@ -1,8 +1,10 @@
 // GENERAL & SETTINGS
-@import variables
-@import fonts
-@import mixins
-@import general
+@forward "variables"
+@forward "fonts"
+@forward "general"
+
+@forward "components/all"
+@forward "parts/all"
 
 // PAGES
-@import home/all
+@forward "pages/all"
